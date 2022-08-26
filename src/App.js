@@ -32,7 +32,7 @@ function App() {
   const navStyle = {
     padding: "2rem",
     color: "white",
-    position: "sticky",
+    position: "fixed",
     top: 0,
     left: 0,
     display: isMobile ? "none" : "flex",
@@ -41,7 +41,7 @@ function App() {
     width: "100%",
     alignItems: "center",
     justifyContent: "space-evenly",
-    marginBottom: "2rem",
+    // marginBottom: "2rem",
     background: "linear-gradient(145deg, #0b1b32, #09172a)",
     boxShadow: "5px 5px 12px #060e1a,\n -5px -5px 12px #0e2444",
   };

@@ -4,7 +4,14 @@ import { Container } from "../components/Container";
 import { ArrowRight } from "@mui/icons-material";
 import { Titles } from "../components/Titles";
 
-const styles = { height: "100vh", width: "100%" };
+const styles = {
+  minHeight: "100vh",
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+};
 const techStyles = { display: "flex", alignItems: "center" };
 
 const wrapper = {

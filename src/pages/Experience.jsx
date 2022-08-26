@@ -10,6 +10,7 @@ const styles = {
   width: "100%",
   display: "flex",
   flexDirection: "column",
+  justifyContent: "center",
 };
 
 const listStyle = {
@@ -19,6 +20,8 @@ const listStyle = {
 
 const headingStyles = {
   marginTop: "6rem",
+  // alignItems: "start",
+  // display: "flex",
 };
 const texts = {
   marginBottom: "1rem",

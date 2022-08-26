@@ -1,7 +1,14 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import { Container } from "../components/Container";
-const styles = { height: "90vh", width: "100%" };
+const styles = {
+  minHeight: "100vh",
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+};
 
 const Home = () => {
   return (
@@ -17,7 +24,10 @@ const Home = () => {
             justifyContent: "center",
           }}
         >
-          <Typography variant="h6" sx={{ color: "#47B6A4", letterSpacing: 3,marginBottom:'1rem' }}>
+          <Typography
+            variant="h6"
+            sx={{ color: "#47B6A4", letterSpacing: 3, marginBottom: "1rem" }}
+          >
             Hi, my name is
           </Typography>
 

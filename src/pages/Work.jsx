@@ -11,6 +11,7 @@ const styles = {
   width: "100%",
   display: "flex",
   flexDirection: "column",
+  justifyContent: "center",
 };
 const cardStyle = {
   boxShadow: 7,
