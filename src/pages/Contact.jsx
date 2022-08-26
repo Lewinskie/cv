@@ -30,17 +30,21 @@ const Contact = () => {
 
           <Typography
             variant="h4"
-            style={{ color: "#CCD6F6", marginBottom: "1rem" }}
+            style={{
+              color: "#CCD6F6",
+              marginBottom: "1rem",
+              textAlign: "center",
+            }}
           >
             Get In Touch
           </Typography>
 
           <Typography variant="h7" style={{ color: "#8690AE" }}>
-            Am currently looking for a new opportunity that will help me grow
-            career-wise and skillwise & my inbox is always open. Whether you
-            have a question, want a quote on a project that you'd want me to
-            handle for you or just want to say hi, inbox me and i will get back
-            to you!
+            Am currently looking for new opportunities that will help me expand
+            my skills and also progress my career. Whether you have a question,
+            want a quote on a project that you'd want me to handle for you or
+            just want to say hi, my inbox is always open. Inbox me and i will
+            get back to you!
           </Typography>
           <div
             style={{ width: "100%", display: "flex", justifyContent: "center" }}

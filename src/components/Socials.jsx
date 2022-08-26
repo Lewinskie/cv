@@ -26,7 +26,11 @@ const Socials = () => {
       icon: <Twitter />,
       url: "https://twitter.com/elwismane",
     },
-    { name: "Whatsapp", icon: <WhatsApp />, url: "https://www.Whatsapp.com" },
+    {
+      name: "Whatsapp",
+      icon: <WhatsApp />,
+      url: "https://wa.me/+254705313785",
+    },
     { name: "facebook", icon: <Facebook />, url: "https://www.discord.com" },
   ];
   const style = { color: "white" };
