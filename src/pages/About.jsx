@@ -9,8 +9,6 @@ const styles = {
   width: "100%",
   display: "flex",
   flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
 };
 const techStyles = { display: "flex", alignItems: "center" };
 
@@ -18,7 +16,6 @@ const wrapper = {
   height: "100%",
   display: "flex",
   flexDirection: "column",
-  // alignItems: "center",
   justifyContent: "center",
   width: "100%",
 };
@@ -34,9 +31,11 @@ const About = () => {
   ];
   return (
     <Container style={styles}>
+      <div style={{ marginTop: "6rem" }}>
+        <Titles number="01." title="About Me" />
+      </div>
       <Grid container style={{ height: "100%" }}>
         <Grid item xs={12} style={wrapper}>
-          <Titles number="01." title="About Me" />
           <Typography
             variant="h7"
             sx={{ color: "#8892B0", marginBottom: "1rem" }}

@@ -24,7 +24,9 @@ const Contact = () => {
         style={{ display: "flex", flexDirection: "column", Height: "100%" }}
       >
         <Grid item xs={12} style={item}>
-          <Titles number="04." title="What's Next?" />
+          <div style={{ marginTop: "3rem" }}>
+            <Titles number="04." title="What's Next?" />
+          </div>
 
           <Typography
             variant="h4"
@@ -48,7 +50,7 @@ const Contact = () => {
               size="large"
               href="mailto:wangara94@gmail.com"
               className="heartbeat"
-              sx={{ marginTop: "8rem" }}
+              sx={{ marginTop: "5rem" }}
             >
               say hello
             </Button>
