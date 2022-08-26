@@ -34,38 +34,47 @@ const Contact = () => {
       </Typography>
       <div
         style={{
+          height: "100%",
           display: "flex",
-          justifyContent: "center",
-          // marginBottom: "8rem",
-          marginTop: "5rem",
+          flexDirection: "column",
+          justifyContent: "space-between",
         }}
       >
-        <Button
-          variant="outlined"
-          size="large"
-          href="mailto:wangara94@gmail.com"
-          className="heartbeat"
-        >
-          say hello
-        </Button>
-      </div>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Typography
-          variant="caption"
-          sx={{
-            color: "#7F89A6",
-            letterSpacing: "0.1rem",
-            "&:hover": { color: "#47A77B", transition: "all 1s ease-in-out" },
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "5rem",
           }}
         >
-          Built by Lewis Maina
-        </Typography>
+          <Button
+            variant="outlined"
+            size="large"
+            href="mailto:wangara94@gmail.com"
+            className="heartbeat"
+          >
+            say hello
+          </Button>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Typography
+            variant="caption"
+            sx={{
+              color: "#7F89A6",
+              letterSpacing: "0.1rem",
+              marginBottom: "1rem",
+              "&:hover": { color: "#47A77B", transition: "all 1s ease-in-out" },
+            }}
+          >
+            Built by Lewis Maina
+          </Typography>
+        </div>
       </div>
     </Container>
   );
