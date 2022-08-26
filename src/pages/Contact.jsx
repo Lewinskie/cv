@@ -1,3 +1,4 @@
+import { GitHub } from "@mui/icons-material";
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import { Container } from "../components/Container";
@@ -75,6 +76,16 @@ const Contact = () => {
             }}
           >
             Built by Lewis Maina
+          </Typography>
+          <Typography
+            variant="caption"
+            sx={{
+              color: "#7F89A6",
+              // letterSpacing: "0.1rem",
+              textAlign: "center",
+            }}
+          >
+            all rights reserved @lewinskie 2022
           </Typography>
         </Grid>
       </Grid>
