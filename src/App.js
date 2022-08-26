@@ -70,7 +70,7 @@ function App() {
       <Grid container>
         <Grid
           item
-          xs={2}
+          xs={1}
           sm={1}
           style={{
             position: "relative",
@@ -85,14 +85,19 @@ function App() {
             style={{
               position: "fixed",
               top: "40%",
-              padding: "0.5rem",
+              // padding: "0.5rem",
+              display: "flex",
+              flexDirection: "column",
+              width: "100%",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
             <Socials />
             <div style={verticleLine} />
           </div>
         </Grid>
-        <Grid item xs={9} sm={10}>
+        <Grid item xs={10} sm={10}>
           <div ref={home} className="bounce-in-top">
             <Home />
           </div>
