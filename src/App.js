@@ -4,7 +4,7 @@ import Experience from "./pages/Experience";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
 import { useRef } from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, useMediaQuery } from "@mui/material";
 import { scrollToFunction } from "./components/Scroll";
 import Socials from "./components/Socials";
 import { Email } from "./components/Email";
@@ -15,6 +15,7 @@ function App() {
   const work = useRef(null);
   const contact = useRef(null);
   const home = useRef(null);
+  const isMobile = useMediaQuery("(max-width:500px)");
   const nav = [
     { name: "Home", ref: home },
     { name: "About", ref: about },
@@ -29,17 +30,20 @@ function App() {
   };
 
   const navStyle = {
-    backDropFilter: "blur(10px)",
-    background: "rgba(255,255,255,0.2)",
     padding: "2rem",
     color: "white",
     position: "sticky",
     top: 0,
     left: 0,
-    display: "flex",
+    display: isMobile ? "none" : "flex",
     zIndex: 2,
     height: "10vh",
     width: "100%",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    marginBottom: "2rem",
+    background: "linear-gradient(145deg, #0b1b32, #09172a)",
+    boxShadow: "5px 5px 12px #060e1a,\n -5px -5px 12px #0e2444",
   };
   const verticleLine = {
     width: "2px",
@@ -56,6 +60,8 @@ function App() {
           <Typography
             onClick={() => scrollToFunction(item.ref)}
             key={item.name}
+            variant="h7"
+            sx={{ color: "#47A77B", textTransform: "uppercase" }}
           >
             {item.name}
           </Typography>
@@ -87,7 +93,7 @@ function App() {
           </div>
         </Grid>
         <Grid item xs={9} sm={10}>
-          <div ref={home}>
+          <div ref={home} className="bounce-in-top">
             <Home />
           </div>
           <div ref={about}>

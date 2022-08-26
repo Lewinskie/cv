@@ -1,7 +1,6 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 export const Email = () => {
- 
   const wrapper = {
     position: "fixed",
     top: "55%",
@@ -11,21 +10,24 @@ export const Email = () => {
 
   return (
     <div style={wrapper}>
-      <Typography
-        variant="subtitle"
-        sx={{
-          transform: "rotate(90deg)",
-          color: "#A0A8C0",
-          letterSpacing: 3,
-          "&:hover": {
-            color: "#47A77B",
-            transition: "all 0.3s ease-in-out",
+      <Button href="mailto:wangara94@gmail.com">
+        <Typography
+          variant="subtitle"
+          sx={{
             transform: "rotate(90deg)",
-          },
-        }}
-      >
-        wangara94@gmail.com
-      </Typography>
+            color: "#A0A8C0",
+            letterSpacing: 3,
+            textTransform: "lowercase",
+            "&:hover": {
+              color: "#47A77B",
+              transition: "all 0.3s ease-in-out",
+              transform: "rotate(90deg)",
+            },
+          }}
+        >
+          wangara94@gmail.com
+        </Typography>
+      </Button>
     </div>
   );
 };

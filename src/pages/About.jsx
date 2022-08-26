@@ -1,4 +1,4 @@
-import { Divider, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import React from "react";
 import { Container } from "../components/Container";
 import { ArrowRight } from "@mui/icons-material";
@@ -31,7 +31,7 @@ const About = () => {
         <Grid item xs={12} style={wrapper}>
           <Titles number="01." title="About Me" />
           <Typography
-            variant="h6"
+            variant="h7"
             sx={{ color: "#8892B0", marginBottom: "1rem" }}
           >
             Hello! My name is Lewis and I enjoy creating things that live on the
@@ -40,7 +40,7 @@ const About = () => {
             tutorials taught me alot about front-end web develpoment!
           </Typography>
           <Typography
-            variant="h6"
+            variant="h7"
             sx={{ color: "#8892B0", marginBottom: "1rem" }}
           >
             Fast-forward to today, and I’ve had the privilege of working at a
@@ -50,14 +50,21 @@ const About = () => {
             main focus these days is building accessible, inclusive products and
             digital experiences at Upstatement for a variety of clients.
           </Typography>
-          <Typography variant="h6" sx={{ color: "#8892B0" }}>
+          <Typography
+            variant="h7"
+            sx={{ color: "#8892B0", marginBottom: "1rem" }}
+          >
             Here are a few technologies I’ve been working with recently:
           </Typography>
-          <Grid container>
+          <Grid container spacing="2">
             {technologies.map((item, index) => (
-              <Grid item xs={6} style={techStyles} key={index}>
-                <ArrowRight sx={{ color: "#47A77B" }} />
-                <Typography sx={{ color: "#8892B0" }}>{item}</Typography>
+              <Grid item xs={6} key={index} style={{ padding: "0rem 3rem " }}>
+                <div style={techStyles}>
+                  <ArrowRight sx={{ color: "#47A77B" }} />
+                  <Typography variant="h7" sx={{ color: "#8892B0" }}>
+                    {item}
+                  </Typography>
+                </div>
               </Grid>
             ))}
           </Grid>
