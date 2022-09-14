@@ -43,18 +43,18 @@ const About = () => {
             Hello! My name is Lewis and I enjoy creating things that live on the
             internet. My interest in web development started back in 2017 when I
             left campus — turns out that those endless bootcamps and youtube
-            tutorials taught me alot about front-end web develpoment!
+            tutorials taught me alot about front-end web development!
           </Typography>
           <Typography
             variant="h7"
             sx={{ color: "#8892B0", marginBottom: "1rem" }}
           >
             Fast-forward to today, and I’ve had the privilege of working at a
-            Security consultancy firm, as a free-lance network, access-control
-            and surveillance consultant, a free-lance front-end web designer and
+            Security consultancy firm, as a free-lance network engineer, access-control
+            and surveillance consultant, free-lance front-end web designer and
             a projects support associate at a leading e-procurement firm. My
             main focus these days is building accessible, inclusive products and
-            digital experiences at Upstatement for a variety of clients.
+            digital experiences.
           </Typography>
           <Typography
             variant="h7"

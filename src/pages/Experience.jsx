@@ -20,8 +20,7 @@ const listStyle = {
 
 const headingStyles = {
   marginTop: "6rem",
-  // alignItems: "start",
-  // display: "flex",
+  
 };
 const texts = {
   marginBottom: "1rem",
@@ -35,7 +34,7 @@ const list = [
     span: "@ AUA INDURSTRIA",
     period: "July 2017 - Aug 2021",
     body: [
-      " Do site surveys and installations of Access Controll systems, Local Area Networks for both Access and surveillance systems, Intrusion detectons systems and alarms systems",
+      " Do site surveys and installations of Access Controll systems, Local Area Networks for both Access and surveillance systems, Intrusion detection systems and alarms systems",
       "Handle suppliers & other clients complains and ensure the issues raised have been resolved to maintain end users satisfaction",
       "Handle client compliants and assist them either onsite or remotely to ensure client satisfaction is achieved",
       "Train end users on the core systems of AUA Indurstria",
@@ -44,7 +43,7 @@ const list = [
   {
     name: "freelance",
     title: "Fullstack dev",
-    span: "@ FREELANCiNG",
+    span: "@ FREELANCING",
     period: "Aug 2021 - Present",
     body: [
       "Design and Write modern, performant, maintainable code for personal projects (mostly for learning tech stacks)",
